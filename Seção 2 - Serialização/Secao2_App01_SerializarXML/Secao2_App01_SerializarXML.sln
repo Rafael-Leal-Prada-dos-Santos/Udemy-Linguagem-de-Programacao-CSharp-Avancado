@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33920.266
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00_Biblioteca", "00_Biblioteca\00_Biblioteca.csproj", "{A006C2ED-A89E-499A-ACCB-F9549015A579}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00_Biblioteca", "00_Biblioteca\00_Biblioteca.csproj", "{A006C2ED-A89E-499A-ACCB-F9549015A579}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_SerializarXML", "01_SerializarXML\01_SerializarXML.csproj", "{7F2E9529-CE51-4AF4-A062-C4AD27300365}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_SerializarXML", "01_SerializarXML\01_SerializarXML.csproj", "{7F2E9529-CE51-4AF4-A062-C4AD27300365}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_DesserializarXML", "02_DesserializarXML\02_DesserializarXML.csproj", "{6E3C8CF3-A7F5-475B-A9CD-38775AA5E485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_SerializarJSON", "03_SerializarJSON\03_SerializarJSON.csproj", "{A412E495-292B-421E-A5C5-14768A026348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_DesserializarJSON", "04_DesserializarJSON\04_DesserializarJSON.csproj", "{5FB643B1-BCF8-452F-BFD3-82CE3070971B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{7F2E9529-CE51-4AF4-A062-C4AD27300365}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F2E9529-CE51-4AF4-A062-C4AD27300365}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F2E9529-CE51-4AF4-A062-C4AD27300365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E3C8CF3-A7F5-475B-A9CD-38775AA5E485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E3C8CF3-A7F5-475B-A9CD-38775AA5E485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E3C8CF3-A7F5-475B-A9CD-38775AA5E485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E3C8CF3-A7F5-475B-A9CD-38775AA5E485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A412E495-292B-421E-A5C5-14768A026348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A412E495-292B-421E-A5C5-14768A026348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A412E495-292B-421E-A5C5-14768A026348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A412E495-292B-421E-A5C5-14768A026348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FB643B1-BCF8-452F-BFD3-82CE3070971B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FB643B1-BCF8-452F-BFD3-82CE3070971B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FB643B1-BCF8-452F-BFD3-82CE3070971B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FB643B1-BCF8-452F-BFD3-82CE3070971B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
