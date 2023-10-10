@@ -11,16 +11,11 @@ namespace _01_Generics
 {
     public class Serializador 
     {
-        //public static void Serializar<T>(T objeto) 
-        //    where T: class
-        //{
-
-        //}
-
         public static void Serializar(object objeto)
         {
             //StreamWriter sw = new StreamWriter($@"C:\Users\RAFAEL\OneDrive\Documentos\Arquivo - C# Avançado\03_(NomeDaClasse).txt");
-            StreamWriter sw = new StreamWriter($@"C:\Users\RAFAEL\OneDrive\Documentos\Arquivo - C# Avançado\03_{objeto.GetType().Name}.txt");
+            //StreamWriter sw = new StreamWriter($@"C:\Users\RAFAEL\OneDrive\Documentos\Arquivo - C# Avançado\03_{objeto.GetType().Name}.txt");
+            StreamWriter sw = new StreamWriter($@"C:\Users\iport-dev\OneDrive - Iport Solutions S.A\Documentos\Arquivo - C# Avançado\03_{objeto.GetType().Name}.txt");
 
             string json = JsonConvert.SerializeObject(objeto);
 
@@ -33,9 +28,13 @@ namespace _01_Generics
         public static T Desserializar<T>()
             where T : class
         {
-            StreamReader sr = new StreamReader($@"C:\Users\RAFAEL\OneDrive\Documentos\Arquivo - C# Avançado\03_{nameof(T)}.txt");
+            //StreamReader sr = new StreamReader($@"C:\Users\RAFAEL\OneDrive\Documentos\Arquivo - C# Avançado\03_{nameof(T)}.txt");
+            StreamReader sr = new StreamReader($@"C:\Users\iport-dev\OneDrive - Iport Solutions S.A\Documentos\Arquivo - C# Avançado\03_{typeof(T).Name}.txt");
 
-            return null;
+            string conteudo = sr.ReadToEnd();
+            sr.Close();
+
+            return JsonConvert.DeserializeObject<T>(conteudo);
         }
     }
 }
