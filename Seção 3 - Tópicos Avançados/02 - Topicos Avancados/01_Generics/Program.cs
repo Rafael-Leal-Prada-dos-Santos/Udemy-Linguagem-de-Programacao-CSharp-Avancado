@@ -30,7 +30,15 @@ namespace _01_Generics
             Serializador.Serializar(casa);
             Serializador.Serializar(usuario);
 
-            Carro carro2 = Serializador.Desserializar();
+            Carro carro2 = Serializador.Desserializar<Carro>();
+            Casa casa2 = Serializador.Desserializar<Casa>();
+            Usuario usuario2 = Serializador.Desserializar<Usuario>();
+
+            Console.WriteLine($"Carro2: {carro2.Marca} - {carro2.Modelo}");
+            Console.WriteLine($"Casa2: {casa2.Cidade} - {casa2.Endereco}");
+            Console.WriteLine($"Usuario2: {usuario2.Nome} - {usuario2.Email}");
+
+            Console.ReadKey();
         }
     }
 }
